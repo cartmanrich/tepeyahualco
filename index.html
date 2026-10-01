@@ -329,7 +329,7 @@ body.contraste{--guinda:#5a0f2a;--basalto:#000;--gris:#1e1e1e;--cal:#fff;--piedr
 }
 @media (max-width:400px){.buscador button{flex:1 1 100%;padding:.8rem}.acc{gap:.2rem}.acc button{padding:.35rem .55rem}}
 @media (max-height:500px) and (orientation:landscape){.hero{min-height:auto}.hero .wrap{padding-top:7.5rem}.scroll-ind{display:none}header.top .util{display:none}}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}.trazo path{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{transform:none}}
 </style>
 </head>
 <body>
@@ -367,7 +367,7 @@ body.contraste{--guinda:#5a0f2a;--basalto:#000;--gris:#1e1e1e;--cal:#fff;--piedr
 <div class="page" id="p-inicio">
   <section class="hero" id="hero">
     <!-- Recorrido en dron: 3 escenas con fundidos, en bucle. En producción, servir banner.mp4 como archivo aparte. -->
-    <video class="hero-media" id="heroMedia" muted loop playsinline preload="auto" poster="banner-respaldo.jpg" aria-label="Recorrido aéreo en dron por la cabecera municipal, el templo parroquial y los cerros de Tepeyahualco de Hidalgo"></video>
+    <video class="hero-media" id="heroMedia" autoplay muted loop playsinline webkit-playsinline x5-playsinline preload="auto" disablepictureinpicture poster="banner-respaldo.jpg" aria-label="Recorrido aéreo en dron por la cabecera municipal, el templo parroquial y los cerros de Tepeyahualco de Hidalgo"></video>
     <div class="wrap">
       <div>
         <span class="kicker" data-i="h_kick">H. CONCEJO MUNICIPAL 2026–2027</span>
@@ -609,7 +609,7 @@ const hdr=$('#top'),prog=$('#progreso'),media=$('#heroMedia');let tick=false;
 function estado(){const y=scrollY,enHero=$('#p-inicio').classList.contains('on');
   hdr.classList.toggle('solido',!enHero||y>40);
   const h=document.documentElement.scrollHeight-innerHeight;prog.style.transform=`scaleX(${h>0?y/h:0})`;
-  if(!reduce&&enHero&&y<innerHeight)media.style.transform=`translateY(${y*.25}px)`;tick=false}
+  if(!reduce&&enHero&&y<innerHeight&&innerWidth>640)media.style.transform=`translateY(${y*.25}px)`;tick=false}
 addEventListener('scroll',()=>{if(!tick){requestAnimationFrame(estado);tick=true}},{passive:true});
 
 /* revelado al hacer scroll + contadores */
@@ -617,7 +617,7 @@ let io;function observar(){if(io)io.disconnect();
   io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visto');const b=e.target.querySelector('[data-cnt]');if(b)contar(b);io.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -40px 0px'});
   $$('.page.on .rv:not(.visto)').forEach(el=>io.observe(el))}
 function fmt(n,b){return (b.dataset.pre||'')+(b.dataset.sep?n.toLocaleString('es-MX'):n)+(b.dataset.suf||'')}
-function contar(b){const fin=+b.dataset.cnt;if(reduce){b.textContent=fmt(fin,b);return}
+function contar(b){const fin=+b.dataset.cnt;
   const ini=fin>1000&&!b.dataset.sep?fin-60:0,t0=performance.now(),dur=1600;
   (function paso(t){const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,4);b.textContent=fmt(Math.round(ini+(fin-ini)*e),b);if(k<1)requestAnimationFrame(paso)})(t0)}
 
@@ -628,13 +628,19 @@ document.addEventListener('pointermove',e=>{const c=e.target.closest('.serv');if
 const vid=$('#heroMedia');
 const ESC=[{t:0,f:3.65,es:'Cabecera municipal',en:'Town center'},{t:3.65,f:10.35,es:'Templo parroquial',en:'Parish church'},{t:10.35,f:14.9,es:'Entre cerros y cielo abierto',en:'Mountains and open sky'}];
 let escAct=-1;
-(function cargarVideo(){vid.src='banner.mp4';if(!reduce){const p=vid.play();if(p)p.catch(()=>{})}else $('#hero').classList.add('quieto')})();
+function arrancar(){if($('#hero').classList.contains('quieto'))return;vid.muted=true;vid.defaultMuted=true;vid.setAttribute('muted','');const p=vid.play();if(p&&p.catch)p.catch(()=>{})}
+(function cargarVideo(){vid.src='banner.mp4';
+  vid.addEventListener('loadeddata',arrancar);vid.addEventListener('canplay',arrancar);arrancar();
+  /* si el celular bloquea la reproducción automática (ahorro de batería o de datos), arranca con el primer toque o scroll */
+  const primer=()=>{if(vid.paused)arrancar();['touchstart','pointerdown','scroll','keydown'].forEach(ev=>removeEventListener(ev,primer))};
+  ['touchstart','pointerdown','scroll','keydown'].forEach(ev=>addEventListener(ev,primer,{passive:true}));
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden&&vid.paused)arrancar()});})();
 function pintaEscena(){const t=vid.currentTime||0;const k=ESC.findIndex(e=>t>=e.t&&t<e.f);const i=k<0?0:k;
   $$('.barras i').forEach((b,j)=>{const e=ESC[j];b.style.transform=`scaleX(${j<i?1:j>i?0:Math.min(1,(t-e.t)/(e.f-e.t))})`});
   if(i!==escAct){escAct=i;const el=$('#escenaTxt');el.classList.add('cambia');setTimeout(()=>{el.textContent=ESC[i][idioma];el.classList.remove('cambia')},300)}}
 (function bucle(){pintaEscena();requestAnimationFrame(bucle)})();
 $$('.barras button').forEach((b,j)=>b.addEventListener('click',()=>{vid.currentTime=ESC[j].t+.05;if(vid.paused&&!$('#hero').classList.contains('quieto'))vid.play()}));
-function pausar(){const h=$('#hero');h.classList.toggle('quieto');if(h.classList.contains('quieto'))vid.pause();else vid.play().catch(()=>{});txtPausa()}
+function pausar(){const h=$('#hero');h.classList.toggle('quieto');if(h.classList.contains('quieto'))vid.pause();else arrancar();txtPausa()}
 function buscar(e){e.preventDefault();$('#ft').value=$('#q').value;location.hash='tramites';filtrarTramites()}
 function sug(t){$('#q').value=t;$('#ft').value=t;location.hash='tramites';filtrarTramites()}
 
