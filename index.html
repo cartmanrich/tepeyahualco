@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>H. Concejo Municipal de Tepeyahualco de Hidalgo, Puebla · 2026–2027</title>
+<meta name="description" content="Sitio oficial del Concejo Municipal de Tepeyahualco de Hidalgo, Puebla. Trámites, transparencia, información financiera, directorio y turismo.">
+<meta name="theme-color" content="#561a2f">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --guinda:#762641;--guinda-osc:#4a1428;--guinda-prof:#2c0b18;--oro:#C19C68;--oro-claro:#E6D3B4;
+  --cal:#F6F4F0;--piedra:#ECE9E3;--tarjeta:#fff;--basalto:#231c1e;--gris:#5F5A57;--linea:#DDD7CE;
+  --display:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;--body:'Public Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --fs:16px;--sombra:0 1px 2px rgba(35,28,30,.06),0 8px 24px rgba(35,28,30,.08);--sombra-alta:0 2px 4px rgba(35,28,30,.08),0 24px 48px rgba(35,28,30,.16);
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --greca:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='14' viewBox='0 0 40 14'%3E%3Cpath d='M0 13h8V5h8v4h-4V7M20 13h8V5h8v4h-4V7' fill='none' stroke='%23C19C68' stroke-width='2.2'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--cal:#181315;--piedra:#211a1c;--tarjeta:#241d1f;--basalto:#F1ECE6;--gris:#B9AEA9;--linea:#3b3234;--guinda:#C2557A;--sombra:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.3);--sombra-alta:0 24px 48px rgba(0,0,0,.45)}}
+:root[data-theme="dark"]{--cal:#181315;--piedra:#211a1c;--tarjeta:#241d1f;--basalto:#F1ECE6;--gris:#B9AEA9;--linea:#3b3234;--guinda:#C2557A}
+:root{box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:var(--fs);scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--body);color:var(--basalto);background:var(--cal);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--guinda)}
+img,svg{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--oro);outline-offset:3px;border-radius:2px}
+.wrap{width:min(1200px,100% - 3rem);margin-inline:auto}
+.ph{background:rgba(255,214,120,.28);border-bottom:1px dashed #b48a2c;padding:0 .2em;border-radius:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.skip{position:absolute;left:-999px;z-index:99}.skip:focus{left:1rem;top:1rem;background:#fff;color:#000;padding:.6rem 1rem;border-radius:6px}
+
+/* barra de progreso */
+#progreso{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--oro),#e9c98f);z-index:60;pointer-events:none}
+
+/* encabezado: transparente sobre el hero, sólido al bajar */
+header.top{position:fixed;inset:0 0 auto 0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .35s var(--ease),box-shadow .35s,color .35s;color:#fff}
+header.top .util{font-size:.78rem;border-bottom:1px solid rgba(255,255,255,.14);transition:border-color .35s,max-height .35s var(--ease),opacity .25s;max-height:40px;overflow:hidden}
+header.top .util .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.4rem 0}
+.acc{display:flex;gap:.3rem}
+.acc button{background:transparent;color:inherit;border:1px solid currentColor;opacity:.85;border-radius:999px;padding:.12rem .65rem;font:600 .74rem var(--body);cursor:pointer}
+.acc button:hover{opacity:1;background:rgba(255,255,255,.12)}
+header.top .bar .wrap{display:flex;align-items:center;gap:1.4rem;padding:.75rem 0;transition:padding .35s var(--ease)}
+.brand{display:flex;align-items:center;gap:.8rem;text-decoration:none;color:inherit}
+.brand .escudo{height:52px;width:auto;transition:height .35s var(--ease);filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
+.brand b{font-family:var(--display);font-weight:800;font-size:1.22rem;letter-spacing:.06em;display:block;line-height:1.1}
+.brand small{font-size:.75rem;opacity:.85;letter-spacing:.02em}
+nav.main{margin-left:auto}
+nav.main ul{list-style:none;display:flex;gap:.15rem}
+nav.main a{position:relative;display:block;padding:.55rem .8rem;text-decoration:none;color:inherit;font-weight:600;font-size:.9rem}
+nav.main a::after{content:"";position:absolute;left:.8rem;right:.8rem;bottom:.25rem;height:2px;background:var(--oro);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+nav.main a:hover::after,nav.main a[aria-current=page]::after{transform:scaleX(1)}
+.menu-btn{display:none;margin-left:auto;background:rgba(255,255,255,.14);color:inherit;border:1px solid rgba(255,255,255,.35);border-radius:8px;padding:.5rem .9rem;font:600 .9rem var(--body);cursor:pointer}
+header.top.solido{background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);color:var(--basalto);box-shadow:0 1px 0 var(--linea),0 10px 30px rgba(35,28,30,.08)}
+header.top.solido .util{max-height:0;opacity:0;border-color:transparent}
+header.top.solido .bar .wrap{padding:.45rem 0}
+header.top.solido .brand .escudo{height:42px;filter:none}
+header.top.solido .brand b{color:var(--guinda)}
+header.top.solido .menu-btn{background:var(--guinda);color:#fff;border-color:var(--guinda)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) header.top.solido{background:rgba(24,19,21,.88)}}
+
+/* ===== HERO ===== */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--guinda-prof);isolation:isolate}
+.hero-media{position:absolute;inset:-6% 0 0 0;width:100%;height:112%;object-fit:cover;z-index:-2;will-change:transform;animation:vuelo 30s ease-in-out infinite alternate}
+@keyframes vuelo{from{scale:1.05;translate:0 0}to{scale:1.18;translate:-2.5% -1.5%}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+ radial-gradient(120% 90% at 0% 100%,rgba(44,11,24,.96) 0%,rgba(74,20,40,.82) 35%,rgba(74,20,40,.25) 65%,rgba(0,0,0,0) 85%),
+ linear-gradient(180deg,rgba(20,6,12,.78) 0%,rgba(20,6,12,.25) 20%,rgba(0,0,0,0) 32%,rgba(0,0,0,0) 60%,rgba(20,6,12,.7) 100%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:3rem;align-items:end;padding:9rem 0 5.5rem}
+.kicker{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--display);font-weight:700;font-size:.82rem;letter-spacing:.14em;color:var(--oro-claro)}
+.kicker::before{content:"";width:34px;height:2px;background:var(--oro)}
+.hero h1{font-family:var(--display);font-weight:900;font-size:clamp(2.8rem,5.3vw,5.2rem);line-height:.95;letter-spacing:-.025em;margin:1rem 0 0}
+.hero h1 .linea{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .linea span{display:block}
+.hero h1 .sub{font-size:.3em;font-weight:600;letter-spacing:.02em;color:#f0dde3;margin-top:.5rem}
+.trazo{width:min(420px,70%);height:16px;margin-top:1.1rem}
+.trazo path{stroke-dasharray:520;stroke-dashoffset:520}
+.hero p.lead{margin-top:1.2rem;font-size:1.12rem;max-width:40ch;color:#f3e9ec;line-height:1.65}
+.buscador{margin-top:2rem;display:flex;max-width:34rem;background:rgba(255,255,255,.97);border-radius:14px;padding:.35rem;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.buscador svg{width:20px;margin:0 .2rem 0 .8rem;align-self:center;color:#8b7f7a;flex:none}
+.buscador input{flex:1;border:0;background:transparent;padding:.85rem .6rem;font:inherit;min-width:0;color:#231c1e;outline:none}
+.buscador button{border:0;background:var(--guinda);color:#fff;padding:0 1.4rem;border-radius:10px;font:700 .92rem var(--body);cursor:pointer;transition:background .2s}
+.buscador button:hover{background:var(--guinda-osc)}
+.sugerencias{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.9rem;font-size:.82rem}
+.sugerencias button{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:999px;padding:.25rem .8rem;font:inherit;cursor:pointer;transition:background .2s}
+.sugerencias button:hover{background:rgba(255,255,255,.22)}
+
+/* panel de accesos: pirámide de cristal */
+.panel-vidrio{background:rgba(30,10,18,.38);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2);border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:1.6rem 1.5rem 1.4rem;box-shadow:0 30px 60px rgba(0,0,0,.3)}
+.panel-vidrio h2{font-family:var(--display);font-size:1rem;font-weight:700;color:#fff;margin-bottom:1rem;text-align:center}
+.piramide{display:flex;flex-direction:column;align-items:center;gap:7px}
+.piramide a{display:flex;justify-content:space-between;align-items:center;gap:1rem;text-decoration:none;color:#fff;background:linear-gradient(90deg,rgba(118,38,65,.95),rgba(140,48,80,.92));padding:.85rem 1.1rem;font-weight:600;font-size:.95rem;border-radius:8px;transition:transform .3s var(--ease),box-shadow .3s,background .3s;white-space:nowrap}
+.piramide a small{font-weight:500;opacity:.8;font-size:.76rem;margin-left:auto}
+.piramide a .fl{display:inline-block;transition:transform .3s var(--ease);opacity:.8}
+.piramide a:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.35);background:linear-gradient(90deg,#8c3050,#a33a60)}
+.piramide a:hover .fl{transform:translateX(4px);opacity:1}
+.piramide a:nth-child(1){width:70%}.piramide a:nth-child(2){width:80%}.piramide a:nth-child(3){width:90%}.piramide a:nth-child(4){width:100%;background:linear-gradient(90deg,rgba(35,28,30,.95),rgba(55,44,47,.95))}
+.piramide .base{width:106%;height:5px;background:linear-gradient(90deg,transparent,var(--oro),transparent);margin-top:3px}
+
+.hero-pie{position:absolute;left:0;right:0;bottom:1.1rem;display:flex;justify-content:space-between;align-items:center;padding:0 1.5rem;font-size:.75rem;color:rgba(255,255,255,.75)}
+.hero-pie button{background:rgba(0,0,0,.3);color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:999px;font:600 .72rem var(--body);padding:.3rem .8rem;cursor:pointer}
+.scroll-ind{position:absolute;left:50%;bottom:1.2rem;translate:-50% 0;width:24px;height:38px;border:2px solid rgba(255,255,255,.6);border-radius:14px}
+.scroll-ind::after{content:"";position:absolute;left:50%;top:7px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:#fff;animation:rueda 1.8s var(--ease) infinite}
+@keyframes rueda{0%{opacity:0;transform:translateY(0)}30%{opacity:1}100%{opacity:0;transform:translateY(12px)}}
+.hero.quieto .hero-media{animation-play-state:paused}
+video.hero-media{animation:none;inset:-4% 0 0 0;height:108%}
+.escenas{display:flex;align-items:center;gap:1rem}
+.escena-txt{font-family:var(--display);font-weight:700;font-size:.82rem;letter-spacing:.06em;color:#fff;min-width:15ch;text-align:right;transition:opacity .5s var(--ease),transform .5s var(--ease)}
+.escena-txt.cambia{opacity:0;transform:translateY(6px)}
+.barras{display:flex;gap:6px}
+.barras button{position:relative;width:46px;height:4px;border:0;border-radius:2px;background:rgba(255,255,255,.28);cursor:pointer;overflow:hidden;padding:0}
+.barras button::before{content:"";position:absolute;inset:-10px 0}
+.barras i{position:absolute;inset:0;background:var(--oro-claro);transform-origin:0 50%;transform:scaleX(0)}
+
+/* animación de entrada del hero */
+.cargado .hero h1 .linea span{animation:sube 1s var(--ease) both}
+.cargado .hero h1 .linea:nth-child(2) span{animation-delay:.12s}
+.cargado .hero .kicker{animation:aparece .8s var(--ease) both}
+.cargado .trazo path{animation:dibuja 1.4s .45s var(--ease) forwards}
+.cargado .hero .lead,.cargado .buscador,.cargado .sugerencias{animation:aparece .9s var(--ease) both}
+.cargado .hero .lead{animation-delay:.35s}.cargado .buscador{animation-delay:.5s}.cargado .sugerencias{animation-delay:.62s}
+.cargado .panel-vidrio{animation:aparece 1s .55s var(--ease) both}
+.cargado .piramide a{animation:aparece .7s var(--ease) both}
+.cargado .piramide a:nth-child(1){animation-delay:.75s}.cargado .piramide a:nth-child(2){animation-delay:.85s}.cargado .piramide a:nth-child(3){animation-delay:.95s}.cargado .piramide a:nth-child(4){animation-delay:1.05s}
+@keyframes sube{from{transform:translateY(105%)}to{transform:none}}
+@keyframes aparece{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes dibuja{to{stroke-dashoffset:0}}
+
+/* revelado al hacer scroll */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.visto{opacity:1;transform:none}
+.rv[data-d="1"]{transition-delay:.08s}.rv[data-d="2"]{transition-delay:.16s}.rv[data-d="3"]{transition-delay:.24s}.rv[data-d="4"]{transition-delay:.32s}.rv[data-d="5"]{transition-delay:.4s}
+
+/* ===== SECCIONES ===== */
+section.blk{padding:6rem 0}
+.cabeza{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:2.6rem;flex-wrap:wrap}
+.cabeza .kicker{color:var(--guinda)}
+h2.t{font-family:var(--display);font-weight:800;font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.08;letter-spacing:-.015em;margin-top:.6rem;max-width:20ch}
+.cabeza p{max-width:46ch;color:var(--gris)}
+.greca{height:14px;background:var(--greca) repeat-x;opacity:.85}
+
+/* servicios */
+.servicios{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem}
+.serv{position:relative;display:flex;gap:1rem;align-items:flex-start;padding:1.5rem;background:var(--tarjeta);border:1px solid var(--linea);border-radius:16px;text-decoration:none;color:inherit;box-shadow:var(--sombra);transition:transform .35s var(--ease),box-shadow .35s,border-color .35s;overflow:hidden}
+.serv::before{content:"";position:absolute;inset:0;background:radial-gradient(400px 160px at var(--mx,50%) var(--my,0%),rgba(193,156,104,.18),transparent 60%);opacity:0;transition:opacity .3s}
+.serv:hover{transform:translateY(-4px);box-shadow:var(--sombra-alta);border-color:rgba(193,156,104,.6)}
+.serv:hover::before{opacity:1}
+.ico{flex:none;width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--guinda),#9c3a5d);color:#fff;box-shadow:0 8px 18px rgba(118,38,65,.3)}
+.ico svg{width:24px;height:24px}
+.serv h3{font-family:var(--display);font-size:1.05rem;font-weight:700;margin-bottom:.2rem}
+.serv p{font-size:.9rem;color:var(--gris);line-height:1.5}
+.serv .ir{position:absolute;right:1.2rem;top:1.3rem;color:var(--oro);opacity:0;transform:translateX(-6px);transition:.3s var(--ease)}
+.serv:hover .ir{opacity:1;transform:none}
+
+/* cifras */
+.cifras{position:relative;background:linear-gradient(135deg,var(--guinda-prof),var(--guinda-osc) 55%,#5e1b33);color:#fff;overflow:hidden}
+.cifras::before{content:"";position:absolute;inset:auto -10% -40% auto;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(193,156,104,.18),transparent 65%)}
+.cifras .cabeza .kicker{color:var(--oro-claro)}
+.cifras .cabeza p{color:#e6d5da}
+.numeros{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.15)}
+.num{padding:2rem 1.4rem 0 0}
+.num+.num{padding-left:1.4rem;border-left:1px solid rgba(255,255,255,.15)}
+.num b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,5vw,4rem);line-height:1;color:var(--oro-claro);font-variant-numeric:tabular-nums}
+.num span{display:block;margin-top:.6rem;font-size:.9rem;color:#ead9de;max-width:22ch}
+
+/* descubre */
+.descubre{background:var(--basalto);color:#f1ece6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .descubre{background:#0f0b0c}}
+.descubre .cabeza .kicker{color:var(--oro)}
+.descubre .cabeza p{color:#b9aea9}
+.descubre h2.t{color:#fff}
+.lugares{display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:auto auto;gap:1.2rem}
+.lugar{position:relative;border-radius:20px;overflow:hidden;min-height:340px;display:flex;align-items:flex-end;isolation:isolate;background:#2a2224}
+.lugar:first-child{grid-row:span 2;min-height:560px}
+.lugar .arte{position:absolute;inset:0;z-index:-2;transition:transform 1.2s var(--ease)}
+.lugar .arte svg{width:100%;height:100%}
+.lugar::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(15,8,10,.95) 0%,rgba(15,8,10,.55) 45%,rgba(15,8,10,0) 75%)}
+.lugar:hover .arte{transform:scale(1.06)}
+.lugar .in{padding:1.8rem;max-width:560px}
+.etq{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;background:rgba(193,156,104,.18);color:var(--oro-claro);border:1px solid rgba(193,156,104,.4);padding:.2rem .65rem;border-radius:999px;margin-bottom:.8rem}
+.lugar h3{font-family:var(--display);font-weight:800;font-size:clamp(1.4rem,2.4vw,2rem);line-height:1.1;color:#fff;margin-bottom:.6rem}
+.lugar p{color:#e1d8d3;font-size:.95rem}
+.lugar .datos{display:flex;gap:2rem;margin:1.1rem 0 .4rem}
+.lugar .datos b{display:block;font-family:var(--display);font-weight:800;font-size:1.9rem;color:var(--oro-claro);line-height:1}
+.lugar .datos span{font-size:.78rem;color:#c9bdb7}
+.lugar .info{margin-top:.9rem;font-size:.82rem;color:#b9aea9;border-top:1px solid rgba(255,255,255,.12);padding-top:.8rem}
+.fuente{font-size:.8rem;color:#9d918c;margin-top:1.5rem}
+
+/* avisos */
+.dos{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem}
+.aviso{display:grid;grid-template-columns:auto 1fr;gap:1.2rem;padding:1.4rem 0;border-top:1px solid var(--linea)}
+.aviso .fecha{width:64px;text-align:center;border-radius:12px;background:var(--piedra);padding:.55rem 0;font-family:var(--display);line-height:1.05}
+.aviso .fecha b{display:block;font-size:1.5rem;color:var(--guinda)}
+.aviso .fecha span{font-size:.72rem;font-weight:600;color:var(--gris)}
+.aviso h3{font-family:var(--display);font-size:1.08rem;font-weight:700;margin-bottom:.25rem}
+.aviso h3 a{color:inherit;text-decoration:none;background:linear-gradient(var(--oro),var(--oro)) 0 100%/0 2px no-repeat;transition:background-size .35s var(--ease)}
+.aviso h3 a:hover{background-size:100% 2px}
+.aviso p{color:var(--gris);font-size:.93rem}
+.cuenta{display:block;position:relative;padding:1.6rem;border-radius:18px;text-decoration:none;color:#fff;overflow:hidden;margin-bottom:1rem;box-shadow:var(--sombra);transition:transform .35s var(--ease),box-shadow .35s}
+.cuenta:hover{transform:translateY(-4px);box-shadow:var(--sombra-alta)}
+.cuenta.a{background:linear-gradient(135deg,var(--guinda),#9c3a5d)}
+.cuenta.b{background:linear-gradient(135deg,#2a2224,#4a3b3e)}
+.cuenta::after{content:"";position:absolute;right:-30px;bottom:-30px;width:160px;height:160px;border-radius:50%;border:24px solid rgba(255,255,255,.07)}
+.cuenta h3{font-family:var(--display);font-size:1.2rem;font-weight:800;margin:.8rem 0 .3rem}
+.cuenta p{font-size:.9rem;opacity:.88;max-width:34ch}
+.cuenta .ico{background:rgba(255,255,255,.15);box-shadow:none}
+.cuenta .vamos{display:inline-flex;gap:.4rem;margin-top:1rem;font-weight:700;font-size:.88rem;color:var(--oro-claro)}
+
+/* páginas internas */
+.page{display:none}.page.on{display:block;animation:entra .5s var(--ease)}
+@keyframes entra{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.pagehead{position:relative;background:linear-gradient(135deg,var(--guinda-prof),var(--guinda-osc) 60%,#5e1b33);color:#fff;padding:10rem 0 3.5rem;overflow:hidden}
+.pagehead::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14px;background:var(--greca) repeat-x;opacity:.7}
+.pagehead h1{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-.015em}
+.pagehead p{max-width:62ch;opacity:.9;margin-top:.7rem}
+.crumbs{font-size:.82rem;opacity:.8;margin-bottom:.8rem}.crumbs a{color:#fff}
+.panel{background:var(--tarjeta);border:1px solid var(--linea);border-radius:16px;padding:1.5rem;box-shadow:var(--sombra)}
+.panel h3{font-family:var(--display);font-size:1.08rem;font-weight:700;margin-bottom:.4rem}
+.panel.oro{border-top:4px solid var(--oro)}.panel.g{border-top:4px solid var(--guinda)}
+.btn{display:inline-flex;align-items:center;gap:.4rem;background:var(--guinda);color:#fff;font-weight:700;text-decoration:none;padding:.7rem 1.2rem;border-radius:10px;margin-top:1rem;font-size:.9rem;transition:background .2s,transform .2s}
+.btn:hover{background:var(--guinda-osc);transform:translateY(-1px)}
+.btn.o{background:var(--oro);color:#231c1e}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem}
+.panel,td,.ph,.persona b{overflow-wrap:anywhere}
+details{background:var(--tarjeta);border:1px solid var(--linea);margin-bottom:.7rem;border-radius:12px;overflow:hidden;transition:box-shadow .3s}
+details[open]{box-shadow:var(--sombra)}
+summary{cursor:pointer;padding:1.1rem 1.3rem;font-weight:700;display:flex;justify-content:space-between;gap:1rem;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary span{font-weight:500;color:var(--gris);font-size:.86rem}
+details[open] summary{color:var(--guinda);border-bottom:1px solid var(--linea)}
+details .in{padding:1.1rem 1.3rem 1.3rem}
+details ul{padding-left:1.2rem}
+.tablewrap{overflow-x:auto;border:1px solid var(--linea);border-radius:14px;background:var(--tarjeta)}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:.85rem 1rem;border-bottom:1px solid var(--linea);vertical-align:top}
+th{background:var(--piedra);font-family:var(--display);font-weight:700;font-size:.82rem}
+tr:last-child td{border-bottom:0}
+tbody tr{transition:background .2s}tbody tr:hover{background:var(--piedra)}
+.filtro{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.1rem}
+.filtro input,.filtro select{padding:.75rem .95rem;border:1px solid var(--linea);border-radius:10px;font:inherit;background:var(--tarjeta);color:var(--basalto)}
+.filtro input{flex:1;min-width:14rem}
+.tabs{display:inline-flex;gap:.25rem;padding:.3rem;background:var(--piedra);border-radius:12px;margin-bottom:1.4rem;flex-wrap:wrap}
+.tabs button{border:0;background:transparent;padding:.55rem 1rem;font:600 .88rem var(--body);cursor:pointer;border-radius:9px;color:var(--basalto)}
+.tabs button[aria-selected=true]{background:var(--tarjeta);color:var(--guinda);box-shadow:var(--sombra)}
+.vacio{padding:1.3rem;color:var(--gris);background:var(--tarjeta);border:1px dashed var(--linea);border-radius:12px}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:.12rem .5rem;border-radius:6px;background:var(--piedra);color:var(--gris)}
+.persona{display:flex;gap:1rem;align-items:center;background:var(--tarjeta);border:1px solid var(--linea);border-radius:14px;padding:1rem}
+.persona .ft{width:56px;height:56px;flex:none;background:linear-gradient(135deg,var(--piedra),var(--linea));border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:800;color:var(--guinda)}
+.persona small{display:block;color:var(--gris)}
+
+/* pie */
+footer{background:var(--guinda-prof);color:#e9dfe2;padding:4.5rem 0 2rem;font-size:.92rem;position:relative}
+footer::before{content:"";position:absolute;top:0;left:0;right:0;height:14px;background:var(--greca) repeat-x;opacity:.6}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.4rem}
+footer h4{font-family:var(--display);color:var(--oro-claro);margin-bottom:.8rem;font-size:.88rem;letter-spacing:.06em}
+footer a{color:#fff;text-decoration:none;opacity:.88}footer a:hover{opacity:1;text-decoration:underline}
+footer ul{list-style:none}footer li{margin-bottom:.4rem}
+footer .logo{height:130px;width:auto;background:#F6F4F0;padding:.7rem;border-radius:14px;margin-bottom:1rem}
+footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:1.3rem;font-size:.8rem;opacity:.75;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+body.contraste{--guinda:#5a0f2a;--basalto:#000;--gris:#1e1e1e;--cal:#fff;--piedra:#f2f2f2;--linea:#777}
+
+@media (max-width:1100px){
+  .hero .wrap{grid-template-columns:minmax(0,1fr);gap:2.4rem}
+  .panel-vidrio{max-width:560px}
+  .hero{min-height:auto}
+}
+@media (max-width:980px){
+  .hero .wrap,.dos,footer .wrap{grid-template-columns:minmax(0,1fr)}
+  .servicios,.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .numeros{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .num:nth-child(3){border-left:0;padding-left:0}
+  .lugares{grid-template-columns:1fr}
+  .lugar:first-child{grid-row:auto;min-height:440px}
+  .menu-btn{display:block}
+  nav.main{display:none;position:absolute;top:100%;left:0;right:0;background:var(--tarjeta);color:var(--basalto);box-shadow:var(--sombra-alta)}
+  nav.main.open{display:block}
+  nav.main ul{flex-direction:column;padding:.6rem 1.5rem 1.2rem;max-height:calc(100vh - 120px);overflow-y:auto}
+  nav.main a{padding:.9rem .4rem;font-size:1rem;border-bottom:1px solid var(--linea)}
+  nav.main a::after{left:.4rem;right:auto;width:40px}
+  header.top .bar .wrap{position:relative}
+  .scroll-ind{display:none}
+}
+@media (max-width:640px){
+  .wrap{width:calc(100% - 2.2rem)}
+  .hero .wrap{padding:9.5rem 0 2rem;gap:2rem}
+  .hero{flex-direction:column;align-items:stretch;justify-content:flex-end}
+  .hero .kicker{display:none}
+  .hero::before{background:linear-gradient(180deg,rgba(20,6,12,.7) 0%,rgba(44,11,24,.25) 22%,rgba(44,11,24,.45) 42%,rgba(44,11,24,.88) 68%,rgba(44,11,24,.97) 100%)}
+  .brand small{font-size:.68rem}
+  .servicios,.grid2,.grid3,.numeros{grid-template-columns:minmax(0,1fr)}
+  .acc button{padding:.4rem .75rem;font-size:.8rem;min-height:34px}
+  header.top .util{max-height:56px}
+  .hero h1{font-size:clamp(2.3rem,12vw,3.2rem)}
+  .buscador{flex-wrap:wrap;border-radius:12px}
+  .buscador input{flex:1 1 60%}
+  .buscador button{padding:.75rem 1rem}
+  .panel-vidrio{padding:1.2rem 1rem;border-radius:16px}
+  .lugar,.lugar:first-child{min-height:380px}
+  .lugar .in{padding:1.3rem}
+  .lugar .datos{gap:1.2rem}
+  .aviso{grid-template-columns:56px 1fr;gap:.9rem}
+  .aviso .fecha{width:56px}
+  .pagehead{padding:8.5rem 0 2.6rem}
+  .filtro input{min-width:0;width:100%}
+  .filtro select{width:100%}
+  .tabs{display:flex;width:100%}.tabs button{flex:1;padding:.55rem .4rem;font-size:.8rem}
+  /* tablas como tarjetas */
+  .tablewrap{border:0;background:transparent;overflow:visible}
+  .tablewrap thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .tablewrap tr{display:block;background:var(--tarjeta);border:1px solid var(--linea);border-radius:12px;padding:.8rem 1rem;margin-bottom:.7rem}
+  .tablewrap td{display:block;border:0;padding:.2rem 0}
+  .tablewrap td[data-l]::before{content:attr(data-l);display:block;font-size:.72rem;font-weight:700;color:var(--gris);letter-spacing:.04em}
+  footer .logo{height:110px}
+  .hero-pie{position:static;padding:0 1.1rem 1.2rem;justify-content:flex-start}
+  .num,.num+.num{border-left:0;padding-left:0}
+  .piramide a{white-space:normal;width:100%!important}
+  .piramide a small{display:none}
+  header.top .util span{display:none}
+  .brand b{font-size:1.02rem}.brand .escudo{height:42px}
+  section.blk{padding:4.2rem 0}
+  .hero-pie .escena-txt{display:none}
+  .hero-pie{justify-content:space-between}
+}
+@media (max-width:400px){.buscador button{flex:1 1 100%;padding:.8rem}.acc{gap:.2rem}.acc button{padding:.35rem .55rem}}
+@media (max-height:500px) and (orientation:landscape){.hero{min-height:auto}.hero .wrap{padding-top:7.5rem}.scroll-ind{display:none}header.top .util{display:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}.trazo path{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div id="progreso" aria-hidden="true"></div>
+
+<header class="top" id="top">
+  <div class="util"><div class="wrap">
+    <span data-i="top">Tepeyahualco de Hidalgo, Puebla · Gobierno Municipal</span>
+    <div class="acc" aria-label="Accesibilidad e idioma">
+      <button onclick="tam(-1)" aria-label="Reducir texto">A−</button>
+      <button onclick="tam(1)" aria-label="Aumentar texto">A+</button>
+      <button onclick="document.body.classList.toggle('contraste')" data-i="contraste">Alto contraste</button>
+      <button id="lang" onclick="toggleLang()" aria-label="Change language to English">EN</button>
+    </div>
+  </div></div>
+  <div class="bar"><div class="wrap">
+    <a class="brand" href="#inicio"><img class="escudo" src="mark.webp" alt="Escudo del Concejo Municipal de Tepeyahualco"><span><b>TEPEYAHUALCO</b><small data-i="b_sub">H. Concejo Municipal 2026–2027</small></span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav" onclick="this.setAttribute('aria-expanded',document.getElementById('nav').classList.toggle('open'))" data-i="menu">Menú</button>
+    <nav class="main" id="nav" aria-label="Principal"><ul>
+      <li><a href="#inicio" data-i="n_inicio">Inicio</a></li>
+      <li><a href="#concejo" data-i="n_concejo">Concejo</a></li>
+      <li><a href="#tramites" data-i="n_tramites">Trámites</a></li>
+      <li><a href="#transparencia" data-i="n_transparencia">Transparencia</a></li>
+      <li><a href="#armonizacion" data-i="n_armonizacion">Información financiera</a></li>
+      <li><a href="#directorio" data-i="n_directorio">Directorio</a></li>
+      <li><a href="#descubre" data-i="n_turismo">Turismo</a></li>
+    </ul></nav>
+  </div></div>
+</header>
+
+<main id="contenido">
+
+<!-- ================= INICIO ================= -->
+<div class="page" id="p-inicio">
+  <section class="hero" id="hero">
+    <!-- Recorrido en dron: 3 escenas con fundidos, en bucle. En producción, servir banner.mp4 como archivo aparte. -->
+    <video class="hero-media" id="heroMedia" muted loop playsinline preload="auto" poster="banner-respaldo.jpg" aria-label="Recorrido aéreo en dron por la cabecera municipal, el templo parroquial y los cerros de Tepeyahualco de Hidalgo"></video>
+    <div class="wrap">
+      <div>
+        <span class="kicker" data-i="h_kick">H. CONCEJO MUNICIPAL 2026–2027</span>
+        <h1><span class="linea"><span>Tepeyahualco</span></span><span class="linea"><span class="sub" data-i="h_sub">de Hidalgo, Puebla</span></span></h1>
+        <svg class="trazo" viewBox="0 0 420 16" aria-hidden="true"><path d="M2 14h60V4h40v7H80V8M122 14h60V4h40v7h-22V8M242 14h60V4h40v7h-22V8M362 14h56" fill="none" stroke="#C19C68" stroke-width="2.4"/></svg>
+        <p class="lead" data-i="h_lead">Tierra de Cantona y Alchichica. Haz tus trámites, consulta cómo se usa el dinero público y encuentra a quién acudir.</p>
+        <form class="buscador" role="search" onsubmit="buscar(event)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <label class="sr" for="q" data-i="h_btn">Buscar</label>
+          <input id="q" data-ph="h_ph" placeholder="¿Qué trámite buscas? Ej. constancia, predial…" autocomplete="off">
+          <button data-i="h_btn2">Buscar</button>
+        </form>
+        <div class="sugerencias" aria-label="Búsquedas frecuentes">
+          <button onclick="sug('constancia')">Constancia de residencia</button>
+          <button onclick="sug('predial')">Predial</button>
+          <button onclick="sug('registro civil')">Actas</button>
+          <button onclick="sug('licencia')">Licencia de funcionamiento</button>
+        </div>
+      </div>
+      <div class="panel-vidrio">
+        <h2 data-i="p_q">¿Qué necesitas hacer?</h2>
+        <div class="piramide">
+          <a href="#tramites"><span data-i="p1">Pagar predial</span><small data-i="p1s">Tesorería</small><span class="fl" aria-hidden="true">›</span></a>
+          <a href="#tramites"><span data-i="p2">Pedir una constancia</span><small data-i="p2s">Secretaría General</small><span class="fl" aria-hidden="true">›</span></a>
+          <a href="#transparencia"><span data-i="p3">Solicitar información pública</span><small data-i="p3s">Transparencia</small><span class="fl" aria-hidden="true">›</span></a>
+          <a href="#directorio"><span data-i="p4">Hablar con un área</span><small data-i="p4s">Directorio</small><span class="fl" aria-hidden="true">›</span></a>
+          <span class="base" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-pie">
+      <button id="pausa" onclick="pausar()">Pausar video</button>
+      <div class="escenas"><span class="escena-txt" id="escenaTxt" aria-live="off">Cabecera municipal</span><div class="barras" aria-label="Escenas del recorrido"><button aria-label="Escena 1"><i></i></button><button aria-label="Escena 2"><i></i></button><button aria-label="Escena 3"><i></i></button></div></div>
+    </div>
+    <span class="scroll-ind" aria-hidden="true"></span>
+  </section>
+
+  <!-- servicios -->
+  <section class="blk" id="servicios"><div class="wrap">
+    <div class="cabeza rv">
+      <div><span class="kicker" data-i="s_kick">SERVICIOS</span><h2 class="t" data-i="s_t">Trámites al alcance de todos</h2></div>
+      <p data-i="s_p">Consulta requisitos, costos y el área que te atiende antes de ir al Palacio Municipal. Así resuelves en una sola visita.</p>
+    </div>
+    <div class="servicios" id="gridServ"></div>
+  </div></section>
+
+  <!-- cifras -->
+  <section class="blk cifras"><div class="wrap">
+    <div class="cabeza rv">
+      <div><span class="kicker" data-i="c_kick">PATRIMONIO EN CIFRAS</span><h2 class="t" data-i="c_t2">Un municipio con historia de escala mundial</h2></div>
+      <p data-i="c_p2">Cantona y Alchichica colocan a Tepeyahualco entre los destinos culturales y naturales más singulares del país.</p>
+    </div>
+    <div class="numeros">
+      <div class="num rv" data-d="1"><b data-cnt="27">0</b><span data-i="k1">canchas de juego de pelota en Cantona, el mayor número de cualquier sitio del país</span></div>
+      <div class="num rv" data-d="2"><b data-cnt="90000" data-sep="1">0</b><span data-i="k2">habitantes estimados en Cantona durante su apogeo</span></div>
+      <div class="num rv" data-d="3"><b data-cnt="60" data-pre="~" data-suf=" m">0</b><span data-i="k3">de profundidad aproximada en la Laguna de Alchichica</span></div>
+      <div class="num rv" data-d="4"><b data-cnt="2018">0</b><span data-i="k4">año en que Alchichica se decretó Área Natural Protegida estatal</span></div>
+    </div>
+  </div></section>
+
+  <!-- descubre -->
+  <section class="blk descubre" id="descubre"><div class="wrap">
+    <div class="cabeza rv">
+      <div><span class="kicker" data-i="d_kick">TURISMO</span><h2 class="t" data-i="d_t">Descubre Tepeyahualco</h2></div>
+      <p data-i="d_i">Una de las ciudades prehispánicas más grandes de Mesoamérica, un lago dentro de un cráter y una hacienda que ha sido set de cine.</p>
+    </div>
+    <div class="lugares">
+      <article class="lugar rv">
+        <div class="arte"><svg viewBox="0 0 600 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><linearGradient id="cielo1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a1424"/><stop offset=".55" stop-color="#8c3a4f"/><stop offset="1" stop-color="#d79b6a"/></linearGradient></defs>
+          <rect width="600" height="700" fill="url(#cielo1)"/>
+          <circle cx="430" cy="250" r="70" fill="#f3c98b" opacity=".9"/>
+          <path d="M0 420 120 360 220 400 330 340 460 395 600 350V700H0z" fill="#4a2230" opacity=".7"/>
+          <path d="M60 560h480v-26H500v-30H450v-30H380v-30H220v30h-70v30H100v30H60z" fill="#2a1219"/>
+          <path d="M240 560v-36h40v18h40v-18h40v36" fill="none" stroke="#C19C68" stroke-width="5"/>
+          <rect y="560" width="600" height="140" fill="#1a0b10"/>
+          <path d="M0 575h600" stroke="#C19C68" stroke-width="3" opacity=".6"/>
+        </svg></div>
+        <div class="in">
+          <span class="etq" data-i="c_etq">ZONA ARQUEOLÓGICA · INAH</span>
+          <h3 data-i="c_t">Cantona</h3>
+          <p data-i="c_p">Ciudad construida sobre un antiguo derrame de lava, con calles amuralladas, calzadas, acrópolis y barrios. Entre los años 600 y 900 fue la urbe más grande e importante del Altiplano Central.</p>
+          <div class="datos"><div><b>27</b><span data-i="c_d1">canchas de juego de pelota</span></div><div><b>90 mil</b><span data-i="c_d2">habitantes en su apogeo</span></div></div>
+          <p class="info" data-i="c_info">Carretera Tepeyahualco–Xonacatlán km 7.5 · Martes a domingo, 9:00 a 18:00 h. Confirma horario y costo con el INAH antes de tu visita.</p>
+        </div>
+      </article>
+      <article class="lugar rv" data-d="1">
+        <div class="arte"><svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><radialGradient id="agua" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#7fe0d2"/><stop offset=".6" stop-color="#2f9e95"/><stop offset="1" stop-color="#1b5f5c"/></radialGradient></defs>
+          <rect width="600" height="400" fill="#5a4a44"/>
+          <ellipse cx="300" cy="210" rx="290" ry="150" fill="#776257"/>
+          <ellipse cx="300" cy="215" rx="230" ry="110" fill="#8d7566"/>
+          <ellipse cx="300" cy="220" rx="190" ry="82" fill="url(#agua)"/>
+          <path d="M180 215c22-10 36 10 58 0M330 245c22-10 36 10 58 0" stroke="#d8fff7" stroke-width="3" fill="none" opacity=".7"/>
+        </svg></div>
+        <div class="in">
+          <span class="etq" data-i="a_etq">ÁREA NATURAL PROTEGIDA</span>
+          <h3 data-i="a_t">Laguna de Alchichica</h3>
+          <p data-i="a_p">Lago de agua salina color turquesa dentro de un cráter volcánico, hogar de estromatolitos y del ajolote de Alchichica, que solo vive aquí.</p>
+          <div class="datos"><div><b>2 km</b><span data-i="a_d1">de diámetro</span></div><div><b>~60 m</b><span data-i="a_d2">de profundidad</span></div></div>
+        </div>
+      </article>
+      <article class="lugar rv" data-d="2">
+        <div class="arte"><svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><linearGradient id="cielo3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b3b55"/><stop offset="1" stop-color="#c88a5a"/></linearGradient></defs>
+          <rect width="600" height="400" fill="url(#cielo3)"/>
+          <rect x="70" y="150" width="460" height="200" fill="#C19C68"/>
+          <path d="M70 150l230-50 230 50z" fill="#762641"/>
+          <g fill="#2a1219"><path d="M110 350v-90a32 32 0 0164 0v90z"/><path d="M210 350v-90a32 32 0 0164 0v90z"/><path d="M326 350v-90a32 32 0 0164 0v90z"/><path d="M426 350v-90a32 32 0 0164 0v90z"/></g>
+          <rect y="350" width="600" height="50" fill="#3a2a22"/>
+        </svg></div>
+        <div class="in">
+          <span class="etq" data-i="s_etq">PATRIMONIO HISTÓRICO</span>
+          <h3 data-i="sr_t">Hacienda San Roque</h3>
+          <p data-i="sr_p">Casco de hacienda que ha sido locación de producciones como <i>Villa, itinerario de una pasión</i> y <i>Ciudadano Buelna</i>.</p>
+        </div>
+      </article>
+    </div>
+    <p class="fuente" data-i="fuente">Datos de Cantona: INAH. Ilustraciones provisionales; se sustituirán por fotografía propia del municipio.</p>
+  </div></section>
+
+  <!-- avisos y cuentas -->
+  <section class="blk"><div class="wrap dos">
+    <div>
+      <div class="cabeza rv" style="margin-bottom:1.2rem"><div><span class="kicker" data-i="av_kick">COMUNICACIÓN SOCIAL</span><h2 class="t" data-i="avisos">Avisos y comunicados</h2></div></div>
+      <article class="aviso rv"><div class="fecha"><b>28</b><span>SEP</span></div><div><h3><a href="#">Nueva conexión a internet en la Presidencia Municipal</a></h3><p><span class="ph">[Resumen del comunicado]</span></p></div></article>
+      <article class="aviso rv" data-d="1"><div class="fecha"><b>15</b><span>SEP</span></div><div><h3><a href="#">Ceremonia del Grito de Independencia</a></h3><p><span class="ph">[Resumen y galería del evento]</span></p></div></article>
+      <article class="aviso rv" data-d="2"><div class="fecha"><b>01</b><span>SEP</span></div><div><h3><a href="#">Horario de atención en oficinas municipales</a></h3><p>Lunes a viernes de <span class="ph">[9:00 a 16:00]</span> h.</p></div></article>
+    </div>
+    <div>
+      <div class="cabeza rv" style="margin-bottom:1.2rem"><div><span class="kicker" data-i="rc_kick">GOBIERNO ABIERTO</span><h2 class="t" data-i="cuentas">Rendición de cuentas</h2></div></div>
+      <a class="cuenta a rv" href="#transparencia"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><h3>Transparencia</h3><p>Obligaciones de la LTAIPEP, solicitudes de información y Comité de Transparencia.</p><span class="vamos">Consultar ›</span></a>
+      <a class="cuenta b rv" data-d="1" href="#armonizacion"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span><h3>Información financiera</h3><p>Estados contables, presupuestales y programáticos por trimestre, conforme al CONAC.</p><span class="vamos">Ver documentos ›</span></a>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= CONCEJO ================= -->
+<div class="page" id="p-concejo">
+  <div class="pagehead"><div class="wrap"><div class="crumbs"><a href="#inicio">Inicio</a> / Concejo</div><h1>Concejo Municipal 2026–2027</h1><p>Quiénes integran el Concejo, cómo está organizada la administración y cuándo sesiona el Cabildo.</p></div></div>
+  <section class="blk"><div class="wrap">
+    <div class="persona" style="max-width:30rem;margin-bottom:2.5rem"><div class="ft">CP</div><div><b class="ph">[Nombre del Concejal Presidente]</b><small>Concejal Presidente Municipal</small></div></div>
+    <h2 class="t" style="margin-bottom:1.4rem">Integrantes del Cabildo</h2>
+    <div class="grid3" id="cabildo"></div>
+    <div class="grid2" style="margin-top:3rem">
+      <div class="panel g"><h3>Organigrama</h3><p>Estructura orgánica vigente, actualizada con la plantilla de personal del trimestre.</p><a class="btn" href="#">Descargar organigrama (PDF)</a></div>
+      <div class="panel oro"><h3>Actas de Cabildo</h3><p>Sesiones ordinarias y extraordinarias con sus acuerdos.</p><a class="btn o" href="#">Consultar actas</a></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= TRÁMITES ================= -->
+<div class="page" id="p-tramites">
+  <div class="pagehead"><div class="wrap"><div class="crumbs"><a href="#inicio">Inicio</a> / Trámites</div><h1>Trámites y servicios</h1><p>Requisitos, costo y área responsable de cada trámite. Lleva tus documentos completos para resolver en una sola visita.</p></div></div>
+  <section class="blk"><div class="wrap">
+    <div class="filtro"><input id="ft" placeholder="Buscar trámite" oninput="filtrarTramites()" aria-label="Buscar trámite"></div>
+    <div id="lista-tramites"></div>
+    <p class="vacio" id="sin-tramites" hidden>No hay trámites con ese nombre. Prueba con otra palabra o llama a Secretaría General.</p>
+  </div></section>
+</div>
+
+<!-- ================= TRANSPARENCIA ================= -->
+<div class="page" id="p-transparencia">
+  <div class="pagehead"><div class="wrap"><div class="crumbs"><a href="#inicio">Inicio</a> / Transparencia</div><h1>Transparencia</h1><p>Información pública del Ayuntamiento conforme a la Ley de Transparencia y Acceso a la Información Pública del Estado de Puebla (LTAIPEP).</p></div></div>
+  <section class="blk"><div class="wrap">
+    <div class="grid3" style="margin-bottom:3.5rem">
+      <div class="panel g"><h3>Solicitar información</h3><p>Presenta tu solicitud en la Plataforma Nacional de Transparencia o en la Unidad de Transparencia. Es gratuita y no necesitas decir para qué la quieres.</p><a class="btn" href="https://www.plataformadetransparencia.org.mx" target="_blank" rel="noopener">Ir a la Plataforma Nacional</a></div>
+      <div class="panel g"><h3>Unidad de Transparencia</h3><p>Titular: <span class="ph">[Nombre]</span><br>Correo: <span class="ph">[transparencia@tepeyahualco.gob.mx]</span><br>Atención: <span class="ph">[horario]</span></p></div>
+      <div class="panel oro"><h3>Datos personales</h3><p>Avisos de privacidad y cómo ejercer tus derechos de acceso, rectificación, cancelación y oposición.</p><a class="btn o" href="#">Ver avisos de privacidad</a></div>
+    </div>
+    <h2 class="t" style="margin-bottom:.6rem">Obligaciones de transparencia</h2>
+    <p style="color:var(--gris);max-width:62ch;margin-bottom:1.6rem">Cada área publica sus formatos en la Plataforma Nacional de Transparencia. Aquí los encuentras por tema y área responsable.</p>
+    <div class="filtro">
+      <input id="fo" placeholder="Buscar obligación (ej. sueldos, contratos, padrón)" oninput="filtrarObl()" aria-label="Buscar obligación">
+      <select id="fa" onchange="filtrarObl()" aria-label="Filtrar por área"><option value="">Todas las áreas</option></select>
+    </div>
+    <div class="tablewrap"><table><thead><tr><th>Fracción</th><th>Obligación</th><th>Área responsable</th><th>Consulta</th></tr></thead><tbody id="obl"></tbody></table></div>
+    <p class="vacio" id="sin-obl" hidden>Ninguna obligación coincide. Quita el filtro de área o busca con otra palabra.</p>
+    <div class="grid2" style="margin-top:3rem">
+      <div class="panel g"><h3>Comité de Transparencia</h3><p>Integración, calendario de sesiones y actas del Comité.</p><a class="btn" href="#">Ver actas del Comité</a></div>
+      <div class="panel g"><h3>Tabla de aplicabilidad</h3><p>Qué obligaciones aplican al municipio y cuáles no, con su justificación.</p><a class="btn" href="#">Descargar tabla</a></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= INFORMACIÓN FINANCIERA ================= -->
+<div class="page" id="p-armonizacion">
+  <div class="pagehead"><div class="wrap"><div class="crumbs"><a href="#inicio">Inicio</a> / Información financiera</div><h1>Información financiera</h1><p>Documentos de la Ley General de Contabilidad Gubernamental y normas del CONAC, organizados por ejercicio y trimestre.</p></div></div>
+  <section class="blk"><div class="wrap">
+    <div class="filtro"><select id="ej" onchange="pintarDocs()" aria-label="Ejercicio fiscal"><option>2026</option></select></div>
+    <div class="tabs" role="tablist" id="tri"></div>
+    <div class="grid2" id="docs"></div>
+    <div class="grid3" style="margin-top:3rem">
+      <div class="panel oro"><h3>Ley de Ingresos</h3><a href="#">Ley de Ingresos 2026 (PDF)</a></div>
+      <div class="panel oro"><h3>Presupuesto de Egresos</h3><a href="#">Presupuesto de Egresos 2026 (PDF)</a></div>
+      <div class="panel oro"><h3>Cuenta Pública</h3><a href="#">Cuenta Pública anual</a></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= DIRECTORIO ================= -->
+<div class="page" id="p-directorio">
+  <div class="pagehead"><div class="wrap"><div class="crumbs"><a href="#inicio">Inicio</a> / Directorio</div><h1>Directorio</h1><p>Áreas del Ayuntamiento, sus titulares y correos institucionales.</p></div></div>
+  <section class="blk"><div class="wrap">
+    <div class="filtro"><input id="fd" placeholder="Buscar área o persona" oninput="pintarDir()" aria-label="Buscar área o persona"></div>
+    <div class="tablewrap"><table><thead><tr><th>Área</th><th>Titular</th><th>Correo institucional</th></tr></thead><tbody id="dir"></tbody></table></div>
+    <p class="vacio" id="sin-dir" hidden>No encontramos esa área. Revisa la ortografía o consulta el organigrama.</p>
+  </div></section>
+</div>
+
+</main>
+
+<footer><div class="wrap">
+  <div><img class="logo" src="logo.webp" alt="Logotipo Tepeyahualco, Concejo Municipal 2026–2027, Progreso y Bienestar"><p style="opacity:.8;max-width:30ch" data-i="f_lema">Progreso y Bienestar para todas las familias de Tepeyahualco de Hidalgo.</p></div>
+  <div><h4 data-i="f_pal">PALACIO MUNICIPAL</h4><p><span class="ph" style="color:#fff">[Domicilio]</span><br>Tepeyahualco de Hidalgo, Pue.</p><p style="margin-top:.6rem">Tel. <span class="ph" style="color:#fff">[teléfono]</span></p></div>
+  <div><h4 data-i="f_go">GOBIERNO</h4><ul><li><a href="#concejo" data-i="n_concejo">Concejo</a></li><li><a href="#tramites" data-i="n_tramites">Trámites</a></li><li><a href="#directorio" data-i="n_directorio">Directorio</a></li></ul></div>
+  <div><h4 data-i="f_rc">RENDICIÓN DE CUENTAS</h4><ul><li><a href="#transparencia" data-i="n_transparencia">Transparencia</a></li><li><a href="#armonizacion" data-i="n_armonizacion">Información financiera</a></li><li><a href="#" data-i="f_priv">Aviso de privacidad</a></li><li><a href="#">Facebook oficial</a></li></ul></div>
+  <div class="legal"><span>© 2026 H. Concejo Municipal de Tepeyahualco de Hidalgo, Puebla.</span><span data-i="cred">Recorrido aéreo: Concejo Municipal de Tepeyahualco de Hidalgo</span><span data-i="f_ph">Prototipo: los textos resaltados son ejemplos por confirmar.</span></div>
+</div></footer>
+
+
+<script>
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let f=16;function tam(d){f=Math.min(22,Math.max(14,f+d*2));document.documentElement.style.setProperty('--fs',f+'px')}
+
+/* enrutador */
+const rutas=['inicio','concejo','tramites','transparencia','armonizacion','directorio'];
+function ir(){const r=(location.hash||'#inicio').slice(1);const anc=r==='descubre';const p=rutas.includes(r)?r:'inicio';
+  $$('.page').forEach(x=>x.classList.toggle('on',x.id==='p-'+p));
+  $$('nav.main a').forEach(a=>{const h=a.getAttribute('href').slice(1);(anc?h==='descubre':h===p)?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current')});
+  $('#nav').classList.remove('open');
+  if(anc)setTimeout(()=>$('#descubre').scrollIntoView(),40);else window.scrollTo(0,0);
+  observar();estado()}
+addEventListener('hashchange',ir);
+
+/* encabezado, progreso y paralaje */
+const hdr=$('#top'),prog=$('#progreso'),media=$('#heroMedia');let tick=false;
+function estado(){const y=scrollY,enHero=$('#p-inicio').classList.contains('on');
+  hdr.classList.toggle('solido',!enHero||y>40);
+  const h=document.documentElement.scrollHeight-innerHeight;prog.style.transform=`scaleX(${h>0?y/h:0})`;
+  if(!reduce&&enHero&&y<innerHeight)media.style.transform=`translateY(${y*.25}px)`;tick=false}
+addEventListener('scroll',()=>{if(!tick){requestAnimationFrame(estado);tick=true}},{passive:true});
+
+/* revelado al hacer scroll + contadores */
+let io;function observar(){if(io)io.disconnect();
+  io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visto');const b=e.target.querySelector('[data-cnt]');if(b)contar(b);io.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+  $$('.page.on .rv:not(.visto)').forEach(el=>io.observe(el))}
+function fmt(n,b){return (b.dataset.pre||'')+(b.dataset.sep?n.toLocaleString('es-MX'):n)+(b.dataset.suf||'')}
+function contar(b){const fin=+b.dataset.cnt;if(reduce){b.textContent=fmt(fin,b);return}
+  const ini=fin>1000&&!b.dataset.sep?fin-60:0,t0=performance.now(),dur=1600;
+  (function paso(t){const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,4);b.textContent=fmt(Math.round(ini+(fin-ini)*e),b);if(k<1)requestAnimationFrame(paso)})(t0)}
+
+/* brillo que sigue al cursor en tarjetas */
+document.addEventListener('pointermove',e=>{const c=e.target.closest('.serv');if(!c)return;const r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')});
+
+/* recorrido en dron */
+const vid=$('#heroMedia');
+const ESC=[{t:0,f:3.65,es:'Cabecera municipal',en:'Town center'},{t:3.65,f:10.35,es:'Templo parroquial',en:'Parish church'},{t:10.35,f:14.9,es:'Entre cerros y cielo abierto',en:'Mountains and open sky'}];
+let escAct=-1;
+(function cargarVideo(){vid.src='banner.mp4';if(!reduce){const p=vid.play();if(p)p.catch(()=>{})}else $('#hero').classList.add('quieto')})();
+function pintaEscena(){const t=vid.currentTime||0;const k=ESC.findIndex(e=>t>=e.t&&t<e.f);const i=k<0?0:k;
+  $$('.barras i').forEach((b,j)=>{const e=ESC[j];b.style.transform=`scaleX(${j<i?1:j>i?0:Math.min(1,(t-e.t)/(e.f-e.t))})`});
+  if(i!==escAct){escAct=i;const el=$('#escenaTxt');el.classList.add('cambia');setTimeout(()=>{el.textContent=ESC[i][idioma];el.classList.remove('cambia')},300)}}
+(function bucle(){pintaEscena();requestAnimationFrame(bucle)})();
+$$('.barras button').forEach((b,j)=>b.addEventListener('click',()=>{vid.currentTime=ESC[j].t+.05;if(vid.paused&&!$('#hero').classList.contains('quieto'))vid.play()}));
+function pausar(){const h=$('#hero');h.classList.toggle('quieto');if(h.classList.contains('quieto'))vid.pause();else vid.play().catch(()=>{});txtPausa()}
+function buscar(e){e.preventDefault();$('#ft').value=$('#q').value;location.hash='tramites';filtrarTramites()}
+function sug(t){$('#q').value=t;$('#ft').value=t;location.hash='tramites';filtrarTramites()}
+
+/* íconos */
+const IC={
+ casa:'<path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/>',
+ doc:'<path d="M14 3H6a1 1 0 00-1 1v16a1 1 0 001 1h12a1 1 0 001-1V8z"/><path d="M14 3v5h5M8 13h8M8 17h5"/>',
+ libro:'<path d="M4 19V5a2 2 0 012-2h13v16H6a2 2 0 00-2 2zm0 0a2 2 0 002 2h13"/><path d="M9 7h6"/>',
+ tienda:'<path d="M3 9l1.5-5h15L21 9M3 9v11h18V9M3 9h18"/><path d="M9 20v-6h6v6"/>',
+ obra:'<path d="M2 20h20M5 20V10l7-5 7 5v10"/><path d="M10 20v-5h4v5"/>',
+ manos:'<path d="M12 21s-7-4.4-9.3-9A5 5 0 0112 6a5 5 0 019.3 6c-2.3 4.6-9.3 9-9.3 9z"/>'};
+const svgI=k=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${IC[k]}</svg>`;
+
+/* trámites (requisitos de ejemplo, validar con cada área) */
+const tram=[
+ {n:'Constancia de residencia',a:'Secretaría General',c:'[costo]',i:'doc',d:'Para escuela, empleo o trámites ante otras dependencias.',r:['Identificación oficial','Comprobante de domicilio reciente','Dos fotografías tamaño infantil']},
+ {n:'Pago del impuesto predial',a:'Tesorería',c:'Según avalúo',i:'casa',d:'Paga a tiempo y aprovecha los descuentos de inicio de año.',r:['Último recibo de pago o clave catastral','Identificación del propietario']},
+ {n:'Actas del Registro Civil',a:'Registro Civil',c:'[costo]',i:'libro',d:'Copias certificadas de nacimiento, matrimonio y defunción.',r:['Datos del registro (nombre, fecha, libro y foja si los tienes)','Identificación de quien solicita']},
+ {n:'Licencia de funcionamiento',a:'Tesorería',c:'[costo]',i:'tienda',d:'Abre o renueva el permiso de tu negocio.',r:['Solicitud por escrito','RFC','Identificación oficial','Comprobante de domicilio del negocio']},
+ {n:'Permiso de construcción',a:'Obras Públicas',c:'Según m²',i:'obra',d:'Construcción, ampliación o remodelación de inmuebles.',r:['Escrituras o documento de posesión','Planos del proyecto','Pago de predial al corriente']},
+ {n:'Apoyos del DIF Municipal',a:'Sistema DIF',c:'Gratuito',i:'manos',d:'Programas de asistencia social para las familias.',r:['Estudio socioeconómico','CURP','Identificación oficial']},
+ {n:'Constancia de identidad',a:'Secretaría General',c:'[costo]',i:'doc',d:'Acredita tu identidad cuando no cuentas con identificación.',r:['Acta de nacimiento','Comprobante de domicilio','Dos testigos con identificación']}];
+$('#gridServ').innerHTML=tram.slice(0,6).map((t,k)=>`<a class="serv rv" data-d="${k%3}" href="#tramites" onclick="$('#ft').value='${t.n.split(' ')[0]}';setTimeout(filtrarTramites,10)"><span class="ico">${svgI(t.i)}</span><span><h3>${t.n}</h3><p>${t.d}</p></span><span class="ir" aria-hidden="true">→</span></a>`).join('');
+$('#lista-tramites').innerHTML=tram.map(t=>`<details data-k="${(t.n+' '+t.a).toLowerCase()}"><summary>${t.n}<span>${t.a}</span></summary><div class="in"><p><b>Requisitos</b></p><ul>${t.r.map(x=>`<li>${x}</li>`).join('')}</ul><p style="margin-top:.7rem"><b>Costo:</b> <span class="${t.c.startsWith('[')?'ph':''}">${t.c}</span> · <b>Dónde:</b> ${t.a}, Palacio Municipal</p></div></details>`).join('');
+function filtrarTramites(){const q=$('#ft').value.toLowerCase().trim();let n=0;$$('#lista-tramites details').forEach(d=>{const ok=d.dataset.k.includes(q);d.hidden=!ok;n+=ok});$('#sin-tramites').hidden=n>0}
+
+/* cabildo */
+const cab=['Síndico(a) Municipal','Concejal de Gobernación','Concejal de Hacienda','Concejal de Obras Públicas','Concejal de Salud','Concejal de Educación','Concejal de Desarrollo Rural','Concejal de Ecología','Concejal de Igualdad de Género'];
+$('#cabildo').innerHTML=cab.map(c=>`<div class="persona"><div class="ft">${c.split(' ').pop()[0]}</div><div><b class="ph">[Nombre]</b><small>${c}</small></div></div>`).join('');
+
+/* obligaciones (ejemplo; completar con la tabla de aplicabilidad) */
+const obl=[['I','Marco normativo','Secretaría General'],['II','Estructura orgánica','Secretaría General'],['III','Facultades de cada área','Secretaría General'],['V','Indicadores de interés público','Dirección de Desempeño'],['VIII','Remuneración de servidores públicos','Tesorería'],['IX','Gastos de representación y viáticos','Tesorería'],['XIV','Convocatorias a concursos de cargos públicos','Recursos Humanos'],['XVII','Directorio de servidores públicos','Recursos Humanos'],['XXI','Información financiera del presupuesto','Tesorería'],['XXVII','Contratos y convenios','Sindicatura'],['XXVIII','Licitaciones y adjudicaciones','Obras Públicas'],['XXXV','Padrón de personas beneficiarias de programas sociales','Desarrollo Social'],['XXXVIII','Mecanismos de participación ciudadana','Secretaría General']];
+$('#fa').innerHTML+=[...new Set(obl.map(o=>o[2]))].sort().map(a=>`<option>${a}</option>`).join('');
+function filtrarObl(){const q=$('#fo').value.toLowerCase(),a=$('#fa').value;const r=obl.filter(o=>o[1].toLowerCase().includes(q)&&(!a||o[2]===a));
+  $('#obl').innerHTML=r.map(o=>`<tr><td><span class="tag">Fr. ${o[0]}</span></td><td>${o[1]}</td><td data-l="ÁREA RESPONSABLE">${o[2]}</td><td><a href="https://www.plataformadetransparencia.org.mx" target="_blank" rel="noopener">Ver en la PNT</a></td></tr>`).join('');$('#sin-obl').hidden=r.length>0}
+
+/* información financiera */
+const cat={'Información contable':['Estado de situación financiera','Estado de actividades','Estado de variación en la hacienda pública','Estado de flujos de efectivo','Notas a los estados financieros'],'Información presupuestaria':['Estado analítico de ingresos','Estado analítico del ejercicio del presupuesto de egresos','Endeudamiento neto','Intereses de la deuda'],'Información programática':['Gasto por categoría programática','Indicadores de resultados'],'Postura fiscal':['Balance presupuestario','Postura fiscal del periodo']};
+const pub={'1':true,'2':true,'3':false,'4':false};let tri='2';
+$('#tri').innerHTML=['1','2','3','4'].map(t=>`<button role="tab" data-t="${t}">${t}.º trimestre</button>`).join('');
+$('#tri').onclick=e=>{if(e.target.dataset.t){tri=e.target.dataset.t;pintarDocs()}};
+function pintarDocs(){$$('#tri button').forEach(b=>b.setAttribute('aria-selected',b.dataset.t===tri));
+  $('#docs').innerHTML=pub[tri]?Object.entries(cat).map(([k,v])=>`<div class="panel g"><h3>${k}</h3><ul style="padding-left:1.1rem">${v.map(d=>`<li style="margin:.25rem 0"><a href="#">${d}</a> <span class="tag">PDF</span></li>`).join('')}</ul></div>`).join(''):`<p class="vacio" style="grid-column:1/-1">Los documentos del ${tri}.º trimestre se publican al cierre del periodo. Consulta el trimestre anterior mientras tanto.</p>`}
+
+/* directorio */
+const dir=[['Presidencia','presidencia'],['Sindicatura','sindicatura'],['Secretaría General','secretaria'],['Tesorería','tesoreria'],['Contraloría','contraloria'],['Obras Públicas','obras'],['Registro Civil','registrocivil'],['Sistema DIF','dif'],['Desarrollo Social','desarrollosocial'],['Desarrollo Rural','desarrollorural'],['Unidad de Transparencia','transparencia'],['Sistemas','sistemas']];
+function pintarDir(){const q=$('#fd').value.toLowerCase();const r=dir.filter(d=>d[0].toLowerCase().includes(q));
+  $('#dir').innerHTML=r.map(d=>`<tr><td><b>${d[0]}</b></td><td data-l="TITULAR"><span class="ph">[Nombre]</span></td><td data-l="CORREO"><a href="mailto:${d[1]}@tepeyahualco.gob.mx">${d[1]}@tepeyahualco.gob.mx</a></td></tr>`).join('');$('#sin-dir').hidden=r.length>0}
+
+/* idioma */
+const EN={top:'Tepeyahualco de Hidalgo, Puebla, Mexico · Municipal Government',contraste:'High contrast',b_sub:'Municipal Council 2026–2027',menu:'Menu',
+n_inicio:'Home',n_concejo:'Council',n_tramites:'Services',n_transparencia:'Transparency',n_armonizacion:'Public finances',n_directorio:'Directory',n_turismo:'Visit',
+h_kick:'MUNICIPAL COUNCIL 2026–2027',h_sub:'de Hidalgo, Puebla, Mexico',h_lead:'Home of Cantona and Lake Alchichica. Find local services, see how public money is spent and reach the right office.',h_ph:'What are you looking for? e.g. certificate, property tax…',h_btn:'Search',h_btn2:'Search',
+p_q:'What do you need to do?',p1:'Pay property tax',p1s:'Treasury',p2:'Request a certificate',p2s:'General Secretariat',p3:'Request public information',p3s:'Transparency',p4:'Contact an office',p4s:'Directory',
+cred:'Aerial footage: Municipal Council of Tepeyahualco de Hidalgo',s_kick:'SERVICES',s_t:'Local services for everyone',s_p:'Check requirements, fees and the office in charge before you visit City Hall, so you can get it done in one trip.',
+c_kick:'HERITAGE IN NUMBERS',c_t2:'A municipality with world-class history',c_p2:'Cantona and Lake Alchichica place Tepeyahualco among the most remarkable cultural and natural destinations in Mexico.',
+k1:'ballcourts at Cantona, more than any other site in Mexico',k2:'estimated inhabitants of Cantona at its peak',k3:'approximate depth of Lake Alchichica',k4:'year Alchichica became a state Protected Natural Area',
+d_kick:'VISIT',d_t:'Discover Tepeyahualco',d_i:'One of the largest pre-Hispanic cities in Mesoamerica, a lake inside a volcanic crater and a hacienda that has served as a film set.',
+c_etq:'ARCHAEOLOGICAL SITE · INAH',c_t:'Cantona',c_p:'A city built on an ancient lava flow, with walled streets, causeways, an acropolis and neighborhoods. Between the years 600 and 900 it was the largest and most important city in the Central Mexican highlands.',c_d1:'ballcourts',c_d2:'inhabitants at its peak',c_info:'Tepeyahualco–Xonacatlán road, km 7.5 · Tuesday to Sunday, 9 am to 6 pm. Check hours and fees with INAH before your visit.',
+a_etq:'PROTECTED NATURAL AREA',a_t:'Lake Alchichica',a_p:'A saline, turquoise lake inside a volcanic crater, home to stromatolites and the Alchichica axolotl, found nowhere else on Earth.',a_d1:'across',a_d2:'deep',
+s_etq:'HISTORIC HERITAGE',sr_t:'Hacienda San Roque',sr_p:'A historic hacienda that has been a filming location for productions such as <i>Villa, itinerario de una pasión</i> and <i>Ciudadano Buelna</i>.',
+fuente:'Cantona data: INAH. Placeholder illustrations, to be replaced with the municipality’s own photography.',av_kick:'PUBLIC COMMUNICATION',avisos:'News and notices',rc_kick:'OPEN GOVERNMENT',cuentas:'Accountability',
+f_lema:'Progress and wellbeing for every family in Tepeyahualco de Hidalgo.',f_pal:'CITY HALL',f_go:'GOVERNMENT',f_rc:'ACCOUNTABILITY',f_priv:'Privacy notice',f_ph:'Prototype: highlighted text is sample content pending confirmation.'};
+const ES={};$$('[data-i]').forEach(e=>{if(!(e.dataset.i in ES))ES[e.dataset.i]=e.innerHTML});$$('[data-ph]').forEach(e=>ES[e.dataset.ph]=e.placeholder);
+let idioma='es';
+function txtPausa(){const q=$('#hero').classList.contains('quieto');$('#pausa').textContent=idioma==='en'?(q?'Play video':'Pause video'):(q?'Reproducir video':'Pausar video')}
+function toggleLang(){setLang(idioma==='es'?'en':'es')}
+function setLang(l){idioma=l;const D=l==='en'?EN:ES;document.documentElement.lang=l;
+  $$('[data-i]').forEach(e=>{if(D[e.dataset.i]!=null)e.innerHTML=D[e.dataset.i]});
+  $$('[data-ph]').forEach(e=>{if(D[e.dataset.ph]!=null)e.placeholder=D[e.dataset.ph]});
+  const b=$('#lang');b.textContent=l==='en'?'ES':'EN';b.setAttribute('aria-label',l==='en'?'Cambiar a español':'Change language to English');
+  txtPausa();escAct=-1;try{localStorage.setItem('tepe-lang',l)}catch(e){}}
+
+filtrarObl();pintarDocs();pintarDir();ir();
+try{if(localStorage.getItem('tepe-lang')==='en')setLang('en')}catch(e){}
+requestAnimationFrame(()=>document.body.classList.add('cargado'));txtPausa();
+</script>
+
+</body>
+</html>
